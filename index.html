@@ -3,68 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Job Portal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 15px;
-            font-size: 24px;
-        }
-        .container {
-            margin-top: 20px;
-        }
-        .job-list {
-            width: 50%;
-            margin: auto;
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .job {
-            border-bottom: 1px solid #ccc;
-            padding: 10px;
-        }
-        .job:last-child {
-            border-bottom: none;
-        }
-        .apply-btn {
-            background: green;
-            color: white;
-            padding: 8px;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-    </style>
+    <title>Login Page</title>
+    <link rel="icon" href="home pic.jpeg">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-
-    <header>Welcome to My Job Portal</header>
-
-    <div class="container">
-        <div class="job-list">
-            <div class="job">
-                <h3>Software Engineer</h3>
-                <p>Company: ABC Tech</p>
-                <p>Location: Remote</p>
-                <a href="#" class="apply-btn">Apply Now</a>
-            </div>
-            <div class="job">
-                <h3>Web Developer</h3>
-                <p>Company: XYZ Solutions</p>
-                <p>Location: New York</p>
-                <a href="#" class="apply-btn">Apply Now</a>
-            </div>
-        </div>
+    <h1 style="font-size: 30px;">WELCOME TO JOBS4U</h1>
+    <p>                 </p>
+    <h2 style="font-size: 30px;">LOGIN PAGE</h2>
+    
+    <img class="left-image" src="home pic.jpeg" alt="flying image">
+    <div class="login-box">
+        <form>
+            <label class="job" style="margin-bottom: 5%;" >Login to Jobs4U</label>
+            <p>                </p>
+            <label for="username" class="username" style="font-weight: bold; font-size: large">Login ID:</label>
+            <input type="email" id="username" placeholder="Enter Username or Mail Id" required style="height: 10%; border: solid 2px;">
+            <p>             </p>
+            <label for="password" class="username" style="font-weight: bold; font-size: large">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" required style="height: 10%; border: solid 2px;" >
+        </form>
+        <a href="http://127.0.0.1:5500/front%20page.html"><button style="margin-bottom: 10%; width: 150px; height: 40px; background-color: rgb(1, 65, 107); color: white; font-size: 20px; border-radius: 5px;" >Log in</button></a>
+        <p>         </p>
+        <a href="http://127.0.0.1:5500/forgot.html"><label class="Forgot" style="cursor: pointer;">Forgot Password?</label></a> 
+        <p>     </p>  
+        <a href="http://127.0.0.1:5500/signup.html"><label class="signup" style="cursor: pointer;">Sign Up for Jobs4U</label></a>
     </div>
-
+    
 </body>
 </html>
