@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="icon" href="home_pic.jpeg">
+    <link rel="stylesheet" href="forgot1.css">
+</head>
+<body style="background-color: honeydew; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+    <form onsubmit="event.preventDefault(); navigateToNewPass();" 
+          style="box-shadow: 3px 3px 3px 3px black; width: 30%; height: 280px; 
+                 display: flex; flex-direction: column; align-items: center; 
+                 justify-content: center; text-align: center; padding: 20px; border-radius: 10px;
+                 background-color: rgb(143,175,160);">
+
+        <h3 style="margin-bottom: 20px;">You will receive an OTP (One-Time Password) <br> if your email ID matches our records.</h3>
+
+        <h2>Please enter the OTP</h2>
+        <div class="otp-container">
+            <input type="text" class="otp-box" maxlength="1">
+            <input type="text" class="otp-box" maxlength="1">
+            <input type="text" class="otp-box" maxlength="1">
+            <input type="text" class="otp-box" maxlength="1">
+        </div><br><br>
+
+        <button type="submit" 
+                style="background-color: rgb(1, 65, 107); 
+                       color: white; 
+                       width: 150px; 
+                       border-radius: 3px; 
+                       border: 2px solid black; 
+                       cursor: pointer;">
+            Submit
+        </button>
+
+    </form>
+
+    <script>
+        function navigateToNewPass() {
+            fetch('new pass.html')
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = "new pass.html"; 
+                    } else {
+                        alert("Error: new_pass.html not found. Check file location.");
+                    }
+                })
+                .catch(error => {
+                    alert("Navigation failed. Check your server setup.");
+                    console.error(error);
+                });
+        }
+    </script>
+
+    <style>
+        .otp-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; 
+            margin-top: 10px; 
+        }
+
+        .otp-box {
+            width: 40px;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+    </style>
+
+</body>
+</html>

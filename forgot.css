@@ -1,0 +1,27 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;  /* Adjust width */
+    padding: 30px;
+    margin: 0 auto; /* Center the form */
+    border-radius: 10px;
+    margin-top: 10%;
+    box-shadow: 3px 3px 3px 3px black;
+    background-color: rgb(143,175,160) ;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input {
+    width: 80%;  /* Adjusted width of input box */
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    margin-left: 10%;
+    border: solid 1px;
+}
+

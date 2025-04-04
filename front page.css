@@ -1,0 +1,110 @@
+body{
+    background-color: honeydew;
+    border: 5px double #1A5F5A;  /* Change the color and width as needed */
+    padding: 10px;  /* Adds space inside the border */
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.menu{
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    text-decoration: underline;
+}
+
+.menu h4 {
+    margin: 0; /* Removes default margin */
+    padding: 10px 15px; /* Adds spacing */
+    color: black; /* Changes text color */
+    border-radius: 5px; /* Rounds corners */
+    cursor: pointer; /* Makes it look clickable */
+    
+}
+
+.menu h4:hover {
+    color: blue; /* Changes color on hover */
+}
+.company-info {
+    display: flex;
+    align-items: flex-start; /* Align text with image */
+    gap: 10px; /* Adds space between image and text */
+    max-width: 90%; /* Ensures it doesn't stretch too much */
+    margin: 0 auto; /* Centers the section */
+    box-shadow: grey 3px 3px 3px 3px;
+    padding: 1px;
+    background-color:#2D8C86;
+}
+
+.text-content {
+    flex: 2; /* Allows text to take remaining space */
+    max-width: 100%; /* Limits width for better readability */
+    font-size: 20px;
+    box-shadow: grey 3px 3px 3px 3px;
+    padding: 1px;
+    background-color: #2D8C86;
+    color: black;
+}
+.company-info1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Adds space between image and text */
+    max-width: 90%;
+    margin : 0 auto; /* Adds space between company sections */
+    box-shadow: grey 3px 3px 3px 3px;
+    padding: 1px;
+    background-color: #2D8C86;
+}
+
+.company-info1:nth-child(even) {
+    flex-direction: row-reverse; /* Swaps image and text for even elements */
+}
+.text-content1{
+    flex: 2; /* Allows text to take remaining space */
+    max-width: 100%; /* Limits width for better readability */
+    font-size: 20px;
+    box-shadow: grey 3px;
+    padding: 1px;
+    background-color:#2D8C86;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+.header-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Aligns items vertically */
+    position: relative;
+    width: 100%;
+}
+
+.header-title {
+    flex-grow: 1; /* Takes up remaining space */
+    text-align: center; /* Centers the text */
+}
+
+.search-bar {
+    position: absolute;
+    right: 10px; /* Moves search bar to the right */
+}
+
+
+    
+.search-bar input {
+    border: black 5px 5px;
+    outline: black 5px 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+

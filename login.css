@@ -1,0 +1,83 @@
+h1{
+    position: absolute;
+    top: 20px;  
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+h2{
+    position: absolute;
+    top: 50px;  
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    background-color: honeydew;
+    overflow: hidden;
+}
+
+.left-image {
+    position: absolute;
+    left: -500px; 
+    top: 55%;
+    transform: translateY(-50%);
+    width: 750px; 
+    animation: fly-in 2s ease-out forwards;
+    z-index: -1;
+    border: 3px solid black;
+    box-shadow: 3px 3px 3px 3px black;
+    border-radius: 10px;
+}
+
+@keyframes fly-in {
+    from {
+        left: -500px; 
+    }
+    to {
+        left: 50px; 
+    }
+}
+.login-box {
+    width: 400px; 
+    height: 250px; 
+    padding: 30px; 
+    margin-left: 45%;
+    margin-top: 4.5%;
+    background-color:rgb(143,175,160)  ;
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 3px 3px 3px 3px black;
+    text-align: center;
+    width: 600px;
+    height: 520px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;  
+    height: 50%;
+    margin: 0 auto; 
+    border-radius: 10px;
+    margin-top: 10%;
+}
+.job{
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.Forgot{
+    font-size: 20px;
+}
+button{
+    cursor:pointer;
+}
+
