@@ -27,7 +27,7 @@ body {
 
 .left-image {
     position: absolute;
-    left: -600px; 
+    left: 600px; 
     top: 55%;
     transform: translateY(-50%);
     width: 580px; 
