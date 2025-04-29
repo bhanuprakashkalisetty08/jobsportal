@@ -27,7 +27,7 @@ body {
 
 .left-image {
     position: absolute;
-    left: -400px; 
+    left: -500px; 
     top: 55%;
     transform: translateY(-50%);
     width: 530px; 
@@ -55,7 +55,7 @@ body {
     border: 2px solid;
     box-shadow: 3px 3px 3px 3px black;
     text-align: center;
-    width: 400px;
+    width: 480px;
     height: 450px;
 }
 form {
