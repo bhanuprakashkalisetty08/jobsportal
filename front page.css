@@ -25,7 +25,7 @@ h1{
 }
 
 .menu h4:hover {
-    color: blue; /* Changes color on hover */
+    color: orange; /* Changes color on hover */
 }
 .company-info {
     display: flex;
