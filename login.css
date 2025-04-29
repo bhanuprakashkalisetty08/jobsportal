@@ -30,7 +30,7 @@ body {
     left: -400px; 
     top: 55%;
     transform: translateY(-50%);
-    width: 680px; 
+    width: 530px; 
     animation: fly-in 2s ease-out forwards;
     z-index: -1;
     border: 3px solid black;
@@ -55,8 +55,8 @@ body {
     border: 2px solid;
     box-shadow: 3px 3px 3px 3px black;
     text-align: center;
-    width: 600px;
-    height: 520px;
+    width: 400px;
+    height: 450px;
 }
 form {
     display: flex;
